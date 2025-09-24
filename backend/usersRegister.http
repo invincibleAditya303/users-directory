@@ -1,0 +1,22 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "firstName": "Dexter",
+    "lastName": "Taylor",
+    "email": "dexter@example.com",
+    "department": "HR"
+}
+###
+
+GET http://localhost:5000/users
+###
+
+PUT http://localhost:5000/users/7
+Content-Type: application/json
+
+{
+    "firstName": "Luke",
+    "lastName": "Tobin"
+}
+###
