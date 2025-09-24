@@ -1,0 +1,195 @@
+.user-bg-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-form-container {
+    width: 85%;
+    height: 93vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.add-user-title {
+    font-size: 48px;
+    font-family: "Roboto";
+    font-weight: bold;
+    align-self: flex-start;
+    padding-left: 5vw;
+}
+
+@media (width < 776px) {
+    .add-user-title {
+        font-size: 24px;
+    }
+}
+
+.add-user-input-container {
+    width: 75vw;
+    height: 10vh;
+    margin-bottom: 7vh;
+}
+
+@media (width < 776px) {
+    .add-user-input-container {
+        height: 8vh;
+    }
+}
+
+.add-user-label-heading {
+    font-size: 32px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+@media (width < 776px) {
+    .add-user-label-heading {
+        font-size: 18px;
+    }
+}
+
+.add-user-input-text {
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    font-size: 24px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    border: 2px #334155 solid;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 10px;
+}
+
+@media (width < 776px) {
+    .add-user-input-text {
+        height: 6vh;
+        font-size: 18px;
+    }
+}
+
+.user-sub-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (width < 776px) {
+    .user-sub-details-container {
+        display: none;
+    }
+}
+
+.add-user-email-input-container {
+    width: 35vw;
+    height: 100%;
+}
+
+@media (width < 776px) {
+    .add-user-email-input-container {
+        width: 75vw;
+        height: 8vh;
+        margin-bottom: 7vh;
+    }
+}
+
+.email-mobile-container {
+    display: none;
+}
+
+@media (width < 776px) {
+    .email-mobile-container {
+        display: block;
+    }
+}
+
+.department-select-container {
+    width: 100%;
+    height: 8vh;
+    font-size: 24px;
+    border: 2px #334155 solid;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.user-select-option-text {
+    font-size: 24px;
+    font-family: "Roboto";
+}
+
+.add-user-buttons-container {
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-right: 5vw;
+}
+
+@media (width < 776px) {
+    .add-user-buttons-container {
+        width: 30vw;
+        height: 3vh;
+    }
+}
+
+.add-user-button {
+    width: 6vw;
+    height: 100%;
+    background-color: transparent;
+    font-size: 24px;
+    font-family: "Roboto";
+    border-radius: 5px;
+    border: 1px #334155 solid;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (width < 776px) {
+    .add-user-button {
+        width: 13vw;
+        font-size: 12px;
+    }
+}
+
+.user-submit-button {
+    background-color: #1870ab;
+    color: #ffffff;
+    border-width: 0px;
+}
+
+.success-text {
+    color:  #2dca73;
+    font-size: 20px;
+    font-family: "Roboto";
+    align-self: flex-start;
+    padding-left: 5vw;
+}
+
+@media (width < 776px) {
+    .success-text {
+        font-size: 10px;
+    }
+}
+
+.failure-text {
+    color: #ff0b37;
+    font-size: 20px;
+    font-family: "Roboto";
+    align-self: flex-start;
+    padding-left: 5vw;
+}
+
+@media (width < 776px) {
+    .failure-text {
+        font-size: 10px;
+    }
+}

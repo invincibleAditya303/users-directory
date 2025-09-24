@@ -1,0 +1,193 @@
+.dashboard-bg-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #777777;
+    display: flex;
+    align-items: stretch;
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 90%;
+}
+
+@media (width < 776px) {
+    .dashboard-container {
+        z-index: 0;
+    }
+}
+
+.compress-container {
+    width: 70%;
+}
+
+@media (width < 776px) {
+    .compress-container {
+        width: 100%;
+    }
+}
+
+.sorting-container{
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (width < 776px) {
+    .sorting-container {
+        height: 6vh;
+    }
+}
+
+.sorting-type-container {
+    width: 20vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+@media (width < 776px) {
+    .sorting-type-container {
+        width: 30vw;
+    }
+}
+
+.sorting-label {
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+@media (width < 776px) {
+    .sorting-label {
+        font-size: 12px;
+    }
+}
+
+.select-sort {
+    height: 100%;
+    width: 5vw;
+    margin-right: 5px;
+}
+
+@media (width < 776px) {
+    .select-sort {
+        width: 12vw;
+    }
+}
+
+.sort-type {
+    font-size: 12px;
+    font-family: "Roboto";
+}
+
+.add-button {
+    width: 6vw;
+    height: 4vh;
+    background-color: #2ca321;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Roboto";
+    padding: 3px;
+    border-radius: 4px;
+    border-width: 0px;
+    margin-right: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (width < 776px) {
+    .add-button {
+        width: 20vw;
+        font-size: 12px;
+    }
+}
+
+.users-list-container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+@media (width < 776px) {
+    .users-list-container {
+        justify-content: center;
+    }
+}
+
+.users-section-failure-view-container {
+  height: 90vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width < 776px) {
+    .users-section-failure-view-container {
+        height: 60vh;
+        width: 100vw;
+    }
+}
+
+.users-section-failure-view-img {
+  height: 40vh;
+  width: 50vw;
+}
+
+.users-section-failure-heading {
+  color: #ffffff;
+  font-size: 42px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+@media (width < 776px) {
+    .users-section-failure-heading {
+        font-size: 14px;
+    }
+}
+
+.users-section-failure-text {
+  color: #f8fafc;
+  font-size: 22px;
+  font-family: 'Roboto';
+}
+
+@media (width < 776px) {
+    .users-section-failure-text {
+        font-size: 12px;
+    }
+}
+
+.users-section-retry-button {
+  height: 42px;
+  width: 90px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  text-align: center;
+  padding-top: auto;
+  border-width: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (width < 776px) {
+    .users-section-retry-button {
+        height: 28px;
+        width: 70px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
