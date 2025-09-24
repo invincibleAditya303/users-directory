@@ -242,7 +242,7 @@ class Dashboard extends Component {
                                 <option className="sort-type" checked>10</option>
                             </select>
                         </div>
-                        <Link to="/employeeform" target="_blank">
+                        <Link to="/userform" target="_blank">
                             <button type="button" className="add-button">Add User</button>
                         </Link>
                     </div>
