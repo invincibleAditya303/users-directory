@@ -10,7 +10,7 @@ A simple web application that lets users view, add, edit, and delete user detail
 ## Table of Contents
 
 - [About](#about)
-- [Live Demo / Preview](#live-demo--preview)
+- [Live Demo / Preview](#live-demo---preview)
 - [Features](#features)
 - [Architecture & Tech Stack](#architecture--tech-stack)
 - [Screenshots](#screenshots)
