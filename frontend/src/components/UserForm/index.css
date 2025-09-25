@@ -137,7 +137,7 @@
 @media (width < 776px) {
     .add-user-buttons-container {
         width: 30vw;
-        height: 3vh;
+        height: 4vh;
     }
 }
 
@@ -147,6 +147,7 @@
     background-color: transparent;
     font-size: 16px;
     font-family: "Roboto";
+    text-align:center;
     border-radius: 5px;
     border: 1px #334155 solid;
     padding: 5px;
