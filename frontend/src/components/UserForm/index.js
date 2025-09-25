@@ -126,8 +126,8 @@ class UserForm extends Component {
                         </select>
                     </div>
                     <div className="add-user-buttons-container">
-                        <button className="add-user-button">Cancel</button>
-                        <button className="add-user-button employee-submit-button">Register</button>
+                        <button className="add-user-button user-cancel-button">Cancel</button>
+                        <button className="add-user-button user-submit-button">Register</button>
                     </div>
                     {successMsg && <p className="success-text">{successMsg}</p>}
                     {errMsg && <p className="failure-text">{errMsg}</p>}

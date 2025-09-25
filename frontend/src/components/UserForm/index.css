@@ -34,7 +34,7 @@
 .add-user-input-container {
     width: 75vw;
     height: 10vh;
-    margin-bottom: 7vh;
+    margin-bottom: 10vh;
 }
 
 @media (width < 776px) {
@@ -126,11 +126,12 @@
 
 .add-user-buttons-container {
     width: 15vw;
-    height: 5vh;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     align-self: flex-end;
     margin-right: 5vw;
+    margin-top: 3vh;
 }
 
 @media (width < 776px) {
@@ -141,10 +142,10 @@
 }
 
 .add-user-button {
-    width: 6vw;
+    width: 8vw;
     height: 100%;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 16px;
     font-family: "Roboto";
     border-radius: 5px;
     border: 1px #334155 solid;
@@ -163,7 +164,10 @@
 .user-submit-button {
     background-color: #1870ab;
     color: #ffffff;
-    border-width: 0px;
+}
+
+.user-cancel-button {
+    background-color: #999999;
 }
 
 .success-text {
