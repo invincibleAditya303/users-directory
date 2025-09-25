@@ -85,7 +85,7 @@ This project is a user management dashboard that allows CRUD operations on user 
 | PUT /users/:id                    |	PUT    |	Update a user                                                 |
 | DELETE /users/:id                 |	DELETE |	Delete a user                                                 |
 
-# Validation and Error Handling
+# Validation & Error Handling
 - Client-side: Forms validate required fields; show immediate feedback for empty or invalid inputs.
 - Server-side: All incoming data is validated before being inserted into database.
 - Errors return meaningful HTTP status codes and messages (e.g. 400 Bad Request, 404 Not Found).
