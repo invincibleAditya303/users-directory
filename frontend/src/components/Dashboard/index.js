@@ -89,7 +89,7 @@ class Dashboard extends Component {
         let newUsersList
 
         if (sortField === "firstName") {
-            newUsersList = [...originalUsersList]
+            newUsersList = [...originalUsersList].slice(lowerLimit, upperLimit)
             newUsersList.sort((a, b) => {
                 const x = a.firstName?.toLowerCase() ?? ""
                 const y = b.firstName?.toLowerCase() ?? ""
@@ -97,17 +97,17 @@ class Dashboard extends Component {
             })
         }
         else if (sortField === 'department') {
-            newUsersList = [...originalUsersList]
+            newUsersList = [...originalUsersList].slice(lowerLimit, upperLimit)
             newUsersList.sort((a, b) => {
                 const x = a.department?.toLowerCase() ?? ""
                 const y = b.department?.toLowerCase() ?? ""
                 return x < y ? -1 : x > y ? 1 : 0
             })
         } else {
-            newUsersList = [...originalUsersList]
+            newUsersList = [...originalUsersList].slice(lowerLimit,upperLimit)
         }
 
-        const pagedList = newUsersList.slice(lowerLimit, upperLimit)
+        const pagedList = newUsersList
 
         this.setState({usersList: pagedList, sortType: sortField})
     }
