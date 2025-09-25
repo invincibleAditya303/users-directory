@@ -2,12 +2,18 @@
 
 A simple web application that lets users view, add, edit, and delete user details.
 
+
+**Live Demo / Preview**: [https://users-directory-jade.vercel.app](https://users-directory-jade.vercel.app)
+
 ---
 
 ## Table of Contents
 
 - [About](#about)
+- [Live Demo](#live-demo)
 - [Features](#features)
+- [Architecture & Tech Stack](#architecture--tech-stack)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)  
   - [Backend Setup](#backend-setup)  
@@ -48,6 +54,16 @@ This project is a user management dashboard that allows CRUD operations on user 
 | Others          | body-parser, CORS                                  |
 
 ---
+
+## Screenshots
+
+<img width="1366" height="720" alt="Screenshot 2025-09-25 233121" src="https://github.com/user-attachments/assets/d0afeb9d-5e70-44f0-8899-08ceeb3dd1ee" />
+
+<img width="1366" height="720" alt="Screenshot 2025-09-25 233132" src="https://github.com/user-attachments/assets/ab40e5c3-4741-4c40-be30-1de779c12666" />
+
+<img width="1366" height="720" alt="Screenshot 2025-09-25 233245" src="https://github.com/user-attachments/assets/300a9453-582d-434e-8794-9d8a362fc049" />
+
+<img width="1366" height="720" alt="Screenshot 2025-09-25 233302" src="https://github.com/user-attachments/assets/f0ebc53b-5b02-479a-89a7-bb9fee69f0da" />
 
 ## Getting Started
 
