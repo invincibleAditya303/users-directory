@@ -82,14 +82,12 @@ class Dashboard extends Component {
     onClickSearch = inputText => {this.setState({searchInput: inputText})}
 
     onChangeSortType = event => {
-        const {originalUsersList, pageNo} = this.state
-        const upperLimit = pageNo * 8
-        const lowerLimit = (pageNo - 1) * 8
+        const {originalUsersList} = this.state
         const sortField = event.target.value
         let newUsersList
 
         if (sortField === "firstName") {
-            newUsersList = [...originalUsersList].slice(lowerLimit, upperLimit)
+            newUsersList = [...originalUsersList]
             newUsersList.sort((a, b) => {
                 const x = a.firstName?.toLowerCase() ?? ""
                 const y = b.firstName?.toLowerCase() ?? ""
@@ -97,14 +95,15 @@ class Dashboard extends Component {
             })
         }
         else if (sortField === 'department') {
-            newUsersList = [...originalUsersList].slice(lowerLimit, upperLimit)
+            newUsersList = [...originalUsersList]
             newUsersList.sort((a, b) => {
                 const x = a.department?.toLowerCase() ?? ""
                 const y = b.department?.toLowerCase() ?? ""
                 return x < y ? -1 : x > y ? 1 : 0
             })
         } else {
-            newUsersList = [...originalUsersList].slice(lowerLimit,upperLimit)
+            newUsersList = [...originalUsersList]
+            console.log(newUsersList)
         }
 
         const pagedList = newUsersList

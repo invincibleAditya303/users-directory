@@ -4,6 +4,7 @@
     background-color: #ffffff;
     border-radius: 5px;
     list-style-type: none;
+    flex-grow: 0;
     margin-left: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
