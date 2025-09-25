@@ -42,7 +42,7 @@ class UserForm extends Component {
             !form.email.trim() ||
             !form.department.trim()
         ) {
-            this.setState({errMsg: 'Please fill all the fields'})
+            this.setState({errMsg: 'Please fill all the fields', successMsg: ''})
             return
         }
 
@@ -66,9 +66,9 @@ class UserForm extends Component {
         const msg = await response.json()
         
         if (response.ok) {
-            this.setState({successMsg: msg, form: {firstName: '', lastName: '', email: '', department: ''}})
+            this.setState({successMsg: msg, form: {firstName: '', lastName: '', email: '', department: '', errMsg: ''}})
         } else {
-            this.setState({errMsg: msg})
+            this.setState({errMsg: msg, successMsg: ''})
         }
         
     }

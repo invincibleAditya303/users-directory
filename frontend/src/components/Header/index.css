@@ -67,7 +67,7 @@
 
 .filter-button {
     width: 3vw;
-    height: 3vh;
+    height: 5vh;
     background-color: #ffffff;
     color: #1f1f1f;
     font-size: 16px;
@@ -80,7 +80,7 @@
 
 @media (width < 776px) {
     .filter-button {
-        width: 10vw;
+        width: 8vw;
         font-size: 12px;
         margin-right: 10px;
     }

@@ -28,6 +28,7 @@ class Dashboard extends Component {
         this.setState({apiStatus: apisStatusConstants.inProgress})
 
         const apiUrl = `${process.env.REACT_APP_API_URL}/users`
+        console.log(apiUrl)
         const response = await fetch(apiUrl)
         console.log(response)
         
