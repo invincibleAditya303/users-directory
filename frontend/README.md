@@ -3,14 +3,14 @@
 A simple web application that lets users view, add, edit, and delete user details.
 
 
-**Live Demo / Preview**: [https://users-directory-jade.vercel.app](https://users-directory-jade.vercel.app)
+**Live Demo**: [https://users-directory-jade.vercel.app](https://users-directory-jade.vercel.app)
 
 ---
 
 ## Table of Contents
 
 - [About](#about)
-- [Live Demo / Preview](#live-demo---preview)
+- [Live Demo](#live-demo)
 - [Features](#features)
 - [Architecture & Tech Stack](#architecture--tech-stack)
 - [Screenshots](#screenshots)
