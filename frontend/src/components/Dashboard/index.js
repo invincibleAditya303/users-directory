@@ -27,7 +27,7 @@ class Dashboard extends Component {
     getUserslist = async () => {
         this.setState({apiStatus: apisStatusConstants.inProgress})
 
-        const apiUrl = 'http://localhost:5000/users'
+        const apiUrl = `${process.env.REACT_APP_API_URL}/users`
         const response = await fetch(apiUrl)
         console.log(response)
         
@@ -133,7 +133,7 @@ class Dashboard extends Component {
         const confirmed = window.confirm("Are you sure you want to delete this address?");
         if (!confirmed) return
 
-        const apiUrl = `http://localhost:5000/users/${userId}`
+        const apiUrl = `${process.env.REACT_APP_API_URL}/users/${userId}`
         const options = {
             method: 'DELETE'
         }
@@ -149,6 +149,10 @@ class Dashboard extends Component {
         } else {
         window.alert("Failed to delete the User. Please try again.");
         }
+    }
+
+    onClickRetryButton = () => {
+        this.getUserslist()
     }
 
     renderLoaderView = () => (

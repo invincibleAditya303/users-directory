@@ -49,9 +49,9 @@ class UserForm extends Component {
         if (isEdit) {
             const {match} = this.props
             const {id} = match.params
-            apiUrl =  `http://localhost:5000/users/${id}`
+            apiUrl =  `${process.env.REACT_APP_API_URL}/users/${id}`
         } else {
-            apiUrl = 'http://localhost:5000/users'
+            apiUrl = `${process.env.REACT_APP_API_URL}/users`
         }
 
         const options = {
