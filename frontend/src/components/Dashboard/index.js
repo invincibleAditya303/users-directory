@@ -43,6 +43,8 @@ class Dashboard extends Component {
                 department: eachUser.department
             }))
             this.setState({usersList: usersDetails, originalUsersList: usersDetails, apiStatus: apisStatusConstants.success})
+        } else {
+            this.setState({apiStatus: apisStatusConstants.failure})
         }
     }
 
@@ -179,6 +181,7 @@ class Dashboard extends Component {
     renderSuccessView = () => {
         const {usersList, searchInput, pageNo, filteredList, isFilterGroupClicked} = this.state
         const upperLimit = pageNo * 8
+        const totalPages = Math.ceil(usersList.length / 8)
 
         let currentUsersList
 
@@ -192,12 +195,16 @@ class Dashboard extends Component {
         currentUsersList = currentUsersList.filter(eachUser => (eachUser.firstName ?? '').toLowerCase().includes(searchInput.toLowerCase())  || (eachUser.email ?? '').toLowerCase().includes(searchInput.toLowerCase()))
 
         return (
+            <>
             <ul className="users-list-container">
                 {currentUsersList.map(eachUser => 
                     <UserListItem userDetails={eachUser} key={eachUser.id} onClickDelete={this.onClickDelete} />
                 )}
             </ul>
+            <Pagination pageNo={pageNo} totalPages={totalPages} onClickPrev={this.onClickPrev} onClickNext={this.onClickNext} />
+            </>
         )
+
     }
 
     renderStatusView = () => {
@@ -223,7 +230,6 @@ class Dashboard extends Component {
         let currentUsersList = usersList.slice(upperLimit-8, upperLimit)
         currentUsersList = currentUsersList.filter(eachUser => (eachUser.firstName ?? '').toLowerCase().includes(searchInput.toLowerCase()))
         const dashboardFullwidth = isFilterActive ? "compress-container" : ""
-        const totalPages = Math.ceil(usersList.length / 8)
 
         return (
             <div className="dashboard-bg-container">
@@ -247,7 +253,6 @@ class Dashboard extends Component {
                         </Link>
                     </div>
                     {this.renderStatusView()}
-                    <Pagination pageNo={pageNo} totalPages={totalPages} onClickPrev={this.onClickPrev} onClickNext={this.onClickNext} />
                     <Footer />
                 </div>
                 <FilterGroup 
